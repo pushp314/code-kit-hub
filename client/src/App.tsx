@@ -16,17 +16,17 @@ import AssetDetailsPage from './pages/marketplace/AssetDetailsPage';
 import CategoryPage from './pages/marketplace/CategoryPage';
 
 // Dashboard Pages
-import DashboardHome from './pages/dashboard/DashboardHome';
-import MyAssetsPage from './pages/dashboard/MyAssetsPage';
-import PurchasesPage from './pages/dashboard/PurchasesPage';
-import UploadAssetPage from './pages/dashboard/UploadAssetPage';
-import ProfilePage from './pages/dashboard/ProfilePage';
-import WishlistPage from './pages/dashboard/WishlistPage';
+// import DashboardHome from './pages/dashboard/DashboardHome';
+// import MyAssetsPage from './pages/dashboard/MyAssetsPage';
+// import PurchasesPage from './pages/dashboard/PurchasesPage';
+// import UploadAssetPage from './pages/dashboard/UploadAssetPage';
+// import ProfilePage from './pages/dashboard/ProfilePage';
+// import WishlistPage from './pages/dashboard/WishlistPage';
 
 // Admin Pages
-import AdminDashboard from './pages/admin/AdminDashboard';
-import ManageUsersPage from './pages/admin/ManageUsersPage';
-import ManageAssetsPage from './pages/admin/ManageAssetsPage';
+// import AdminDashboard from './pages/admin/AdminDashboard';
+// import ManageUsersPage from './pages/admin/ManageUsersPage';
+// import ManageAssetsPage from './pages/admin/ManageAssetsPage';
 
 // Guards
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
@@ -52,12 +52,13 @@ function App() {
           <DashboardLayout />
         </ProtectedRoute>
       }>
+        {/*
         <Route index element={<DashboardHome />} />
         <Route path="my-assets" element={<MyAssetsPage />} />
         <Route path="purchases" element={<PurchasesPage />} />
         <Route path="upload" element={<UploadAssetPage />} />
         <Route path="profile" element={<ProfilePage />} />
-        <Route path="wishlist" element={<WishlistPage />} />
+        <Route path="wishlist" element={<WishlistPage />} /> */}
       </Route>
       
       {/* Admin Routes */}
@@ -66,11 +67,14 @@ function App() {
           <AdminLayout />
         </AdminRoute>
       }>
+        {/* 
         <Route index element={<AdminDashboard />} />
         <Route path="users" element={<ManageUsersPage />} />
-        <Route path="assets" element={<ManageAssetsPage />} />
+        <Route path="assets" element={<ManageAssetsPage />} />   
+         */}
       </Route>
     </Routes>
+    
   );
 }
 
